@@ -11,7 +11,7 @@ function Register(){
     const [name,setName]=useState("");
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
-    
+  
     async function signUp(){
         let item={name,email,password};
         let results=await fetch("http://127.0.0.1:8000/api/register",{
